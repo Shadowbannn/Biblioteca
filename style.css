@@ -1,0 +1,75 @@
+body{
+    background-color: #f4f6f9;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card{
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+.card_body{
+  color: black;
+}
+
+.container{
+  color: white;
+  backdrop-filter:blur(2px);
+  background:rgba(0,0,0,0.25);
+}
+
+footer{
+      text-align: center;
+      width:100%;
+      bottom:0;
+      left:0;
+      padding:20px 5%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+}
+nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      padding:20px 5%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+      backdrop-filter:blur(10px);
+      background:rgba(0,0,0,0.25);
+    }
+
+    .font{
+      font-size:24px;
+      font-family:'Playfair Display', serif;
+      letter-spacing:3px;
+      font-weight:700;
+      color: white;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav a{
+      color:#ddd;
+      text-decoration:none;
+}
+
+body {
+  background-image: url(https://media.admagazine.com/photos/6585f181bbe8ec0403994e1f/16:9/w_2560%2Cc_limit/the-library-b2-hotel-zurich.jpg); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+}
