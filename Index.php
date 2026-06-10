@@ -39,93 +39,60 @@ $prestamo3 = new Prestamo($socio3,$libro3,"17/02/2026","25/02/2026");
     </div>
 
     <ul>
-      <li><a href="#"><b>Inicio</b></a></li>
-      <li><a href="#"><b>Libros</b></a></li>
-      <li><a href="#"><b>Socios</b></a></li>
-      <li><a href="#"><b>Prestamos</b></a></li>
+      <li><a href="Index.php"><b>Inicio</b></a></li>
+      <li><a href="verlibro.php"><b>Libros</b></a></li>
+      <li><a href="versocio.php"><b>Socios</b></a></li>
+      <li><a href="verprestamo.php"><b>Prestamos</b></a></li>
       <li><a href="#"><b>Contacto</b></a></li>
     </ul>
 
   </nav>
 
-
-
-
 <div class="container">
 
     <h1 class="titulo"><br><br><b>Bienvenidos</b></h1>
 
-    <div class="row">
+    <div class="row mt-5">
 
-        <div class="col-12">
-
-            <div class="card">
-                <div class="card text-white bg-dark mb-3">
-                     <b>Libros</b>
-                </div>
-
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://statics.forbesuruguay.com/2024/11/crop/67407a774a603__600x390.webp" alt="Libros">
                 <div class="card-body">
-                    <?php
-                    echo $libro1->mostrarInfo();
-                    echo "<hr>";
-                    echo $libro2->mostrarInfo();
-                    echo "<hr>";
-                    echo $libro3->mostrarInfo();
-                    ?>
+                    <h5 class="card-title">Libritos</h5>
+                    <p class="card-text">Libritos disponibles</p>
+                    <a href="verlibro.php" class="btn btn-primary">Ver Libritos</a>
                 </div>
             </div>
-
         </div>
 
-        <div class="col-12">
-
-            <div class="card">
-                <div class="card text-white bg-dark mb-3">
-                    Socios
-                </div>
-
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://portalsocios.com/assets/img/comunidad-portal-socios1.png" alt="Socios">
                 <div class="card-body">
-                    <?php
-                    echo $socio1->mostrarInfo();
-                    echo "<hr>";
-                    echo $socio2->mostrarInfo();
-                    echo "<hr>";
-                    echo $socio3->mostrarInfo();
-                    ?>
+                    <h5 class="card-title">Socios</h5>
+                    <p class="card-text">Sociedad de lectores</p>
+                    <a href="versocio.php" class="btn btn-primary">Ver Socios</a>
                 </div>
             </div>
-
         </div>
 
-        <div class="col-12">
-
-            <div class="card">
-                <div class="card text-white bg-dark mb-3">
-                    Préstamos
-                </div>
-
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLfB2R3avYAP-mu4DI27Gz26QW7mcJDZTMn3TafilEoWUBRZ4kJoS_Bywt&s=10" alt="Prestamos">
                 <div class="card-body">
-                    <?php
-                    echo $prestamo1->mostrarInfo();
-                    echo "<hr>";
-
-                    echo $prestamo2->mostrarInfo();
-                    echo "<hr>";
-
-                    echo $prestamo3->mostrarInfo();
-                    ?>
+                    <h5 class="card-title">Prestamos</h5>
+                    <p class="card-text">Prestamos hechos</p>
+                    <a href="verprestamo.php" class="btn btn-primary">Ver Prestamos</a>
                 </div>
             </div>
-
         </div>
 
     </div>
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-dark text-white text-center p-3 mt-5">
         Biblioteca de los guri
     </footer>
 
 </div>
-
 </body>
 </html>
