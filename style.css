@@ -1,80 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://i.gifer.com/embedded/download/RF5z.gif); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-
+body{
+    background-color: #f4f6f9;
 }
 
-.formulario {
-    background-color: #fff;
-    padding: 40px;
-    width: 450px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-       background-image: url(https://i.gifer.com/embedded/download/RF5z.gif); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed;  
-}
-
-.formulario h1 {
+.titulo{
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 30px;
-    color: #ffffff
 }
 
-.form-group label {
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 5px;
-    display: block;
+.card{
+    margin-bottom: 40px;
+    font-size: 17px;
 }
 
-.form-group input[type="email"],
-.form-group input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
+.card_body{
+  color: black;
 }
 
-.form-group input:focus {
-    border-color: #4facfe;
-    box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+.container{
+  color: white;
+  backdrop-filter:blur(2px);
+  background:rgba(0,0,0,0.25);
 }
 
-#emailHelp {
-    display: block;
-    margin-top: 5px;
-    color: #777;
+footer{
+      text-align: center;
+      width:100%;
+      bottom:0;
+      left:0;
+      padding:20px 5%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+}
+nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      padding:20px 5%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+      backdrop-filter:blur(10px);
+      background:rgba(0,0,0,0.25);
+    }
+
+    .font{
+      font-size:24px;
+      font-family:'Playfair Display', serif;
+      letter-spacing:3px;
+      font-weight:700;
+      color: white;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav a{
+      color:#ddd;
+      text-decoration:none;
 }
 
-.form-check {
-    margin: 15px 0;
+body {
+  background-image: url(https://media.admagazine.com/photos/6585f181bbe8ec0403994e1f/16:9/w_2560%2Cc_limit/the-library-b2-hotel-zurich.jpg); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
 }
 
-.btn-primary {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    background-color: #2d8cf0;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: skyblue;
+.card img{
+    height: 250px;
+    object-fit: cover;
 }
